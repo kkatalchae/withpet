@@ -179,8 +179,8 @@
             <c:if test="${sessionScope.id != null}">
                 <input type="button" value="추천" class="btn btn-outline-secondary" onClick="hosLikeButton()">
             </c:if>
-
-            <c:if test="${sessionScope.id == hospital.hos_writer}">
+            <c:if test="${sessionScope.id == hospital.hos_writer || sessionScope.role == 'hospital'||
+			          sessionScope.role == 'master'}">
                 <input type="button" value="수정" class="btn btn-outline-secondary"
                        onClick="location.href='updateForm?hos_no=${hospital.hos_no}&page=${page}'">
                 <input type="button" value="삭제" class="btn btn-outline-secondary"
@@ -205,6 +205,4 @@
     </div>
     <div id="hosReList"></div>
 </section>
-
-
 <%@ include file="../layout/footer.jsp" %>
