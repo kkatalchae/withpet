@@ -1,0 +1,20 @@
+### IntelliJ IDEA ###
+*.iml
+/.idea
+
+### Eclipse ###
+/.settings/
+.classpath
+.project
+.springBeans
+
+### Build ###
+/target/
+/bin/
+
+
+### config ###
+src/main/resources/*.properties
+
+### Upload File ###
+src/main/webapp/upload/

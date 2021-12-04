@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-config.dtd">
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
 
-<!-- 	<typeAliases>
-		<typeAlias alias="" type="com.project.withpet.model." />
-	</typeAliases>	 -->
-	
+	<typeAliases>
+		<typeAlias alias="hospital" type="com.project.withpet.model.Hospital" />
+        <typeAlias alias="member" type="com.project.withpet.model.Member"/>
+        <typeAlias alias="business" type="com.project.withpet.model.Business"/>
+        <typeAlias alias="pet" type="com.project.withpet.model.Pet"/>
+        <typeAlias alias="community" type="com.project.withpet.model.Community" />
+        <typeAlias alias="qna" type="com.project.withpet.model.Qna" />
+        <typeAlias alias="product" type="com.project.withpet.model.Product"/>
+        <typeAlias alias="notice" type="com.project.withpet.model.Notice" />
+        <typeAlias alias="hoslike" type="com.project.withpet.model.Hoslike"/>
+        <typeAlias alias="comlike" type="com.project.withpet.model.Comlike"/>
+        <typeAlias alias="prolike" type="com.project.withpet.model.Prolike"/>
+        <typeAlias alias="replyNotice" type="com.project.withpet.model.ReplyNotice" />
+        <typeAlias alias="replyHospital" type="com.project.withpet.model.ReplyHospital"/>
+        <typeAlias alias="replyCommunity" type="com.project.withpet.model.ReplyCommunity"/>
+	</typeAliases> 
+
+
+
 </configuration>
