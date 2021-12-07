@@ -4,7 +4,7 @@
 <!-- 추천 버튼 클릭 시 -->
 <script>
     function ProLikeButton(){
-        if(${empty sessionScope.id}) {
+        if(${sessionScope.id == null}) {
             alert("로그인이 필요한 서비스입니다!");
             return false;
 
@@ -123,7 +123,7 @@
                    onClick="location.href='${path}/productDelete/?no=${product.pro_no}&page=${page}' ">
         </c:if>
         <input type="button" value="목록" class="btn btn-primary"
-               onClick="${path}/productList">
+               onClick="location.href='${path}/productList?no=${product.pro_no}&page=${page}' ">
     </div>
 
     <!-- 댓글 처리 -->
