@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ include file="../layout/header.jsp" %>
+<script src="${path}/js/community.js"></script>
 
 <!-- ckeditor 4 -->
 <link rel="stylesheet" href="${path}//ckeditor/contents.css"> <%--content에 ckeditro 걸어두기--%>
@@ -11,7 +12,7 @@
 <section class="py-5">
     <div class="container">
         <h2 class="body-title">글작성</h2>
-        <form method=post action="boardWrite" enctype="multipart/form-data">
+        <form method=post action="boardWrite" enctype="multipart/form-data" onSubmit="return comm_check()">
             <table id="boardForm_table" class="table">
                 <input type="hidden" name="pro_img" value=${community.com_no }/>
                 <tr>

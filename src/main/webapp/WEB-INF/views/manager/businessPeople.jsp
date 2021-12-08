@@ -43,7 +43,7 @@
 						<tr>
 							<!-- 프로필 -->
 							<td align="center"><c:if test="${empty member.profile}">
-									<img src="./images/basic_profile.png" height="100" width="100" />
+									<img src="${path}/images/basic_profile.png" height="100" width="100" />
 								</c:if> <c:if test="${!empty member.profile}">
 									<img src="${path}/upload/member/${member.profile}" height="100"
 										width="100" />
@@ -80,7 +80,7 @@
 						<tr>
 							<!-- 프로필 -->
 							<td align="center"><c:if test="${empty member.profile}">
-									<img src="./images/basic_profile.png" height="100" width="100" />
+									<img src="${path}/images/basic_profile.png" height="100" width="100" />
 								</c:if> <c:if test="${!empty member.profile}">
 									<img src="${path}/upload/member/${member.profile}" height="100"
 										width="100" />
